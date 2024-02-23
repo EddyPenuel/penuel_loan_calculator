@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::Penuel Loan Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Penuel Loan Calculator</h1>
+      <p>
+        Loan Amount $
+        <input
+          type="number"
+          class="input"
+          id="loan-amount"
+          onchange="calculateLoan()"
+          min="1"
+          max="500000"
+          value="10000"
+        />
+      </p>
+      <p>
+        Interest Rate %
+        <input
+          type="number"
+          class="input"
+          id="input"
+          onchange="calculateLoan"
+          id="interest-rate"
+          min="0"
+          max="100"
+          value="10"
+          step=".1"
+        />
+      </p>
+      <p>
+        Months To Pay
+        <input
+          onchange="calculateLoan()"
+          type="number"
+          class="input"
+          id="months-to-pay"
+          min="6"
+          max="48"
+          value="12"
+        />
+      </p>
+    </div>
+    <p class="payment" id="payment">Monthly Payment:</p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
