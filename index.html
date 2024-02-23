@@ -12,10 +12,10 @@
       <p>
         Loan Amount $
         <input
+          onchange="calculateLoan()"
           type="number"
           class="input"
           id="loan-amount"
-          onchange="calculateLoan()"
           min="1"
           max="500000"
           value="10000"
@@ -24,10 +24,10 @@
       <p>
         Interest Rate %
         <input
+          onchange="calculateLoan()"
           type="number"
           class="input"
           id="input"
-          onchange="calculateLoan"
           id="interest-rate"
           min="0"
           max="100"
@@ -47,8 +47,8 @@
           value="12"
         />
       </p>
+      <p class="payment" id="payment">Monthly Payment:</p>
     </div>
-    <p class="payment" id="payment">Monthly Payment:</p>
 
     <script src="index.js"></script>
   </body>
